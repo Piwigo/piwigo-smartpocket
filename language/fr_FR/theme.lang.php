@@ -4,5 +4,4 @@ $lang['Slideshow Options'] = 'Options du diaporama';
 $lang['Loop the slideshow'] = 'Boucler le diaporama';
 $lang['Autohide the bar of the slideshow'] = 'Cacher automatiquement la barre du diaporama';
 $lang['More Information'] = 'Plus d\'informations';
-$lang['sub-album'] = 'sous-album';
 ?>
