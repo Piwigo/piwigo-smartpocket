@@ -4,4 +4,5 @@ $lang['Slideshow Options'] = 'Slideshow Options';
 $lang['Loop the slideshow'] = 'Loop the slideshow';
 $lang['Autohide the bar of the slideshow'] = 'Autohide the bar of the slideshow';
 $lang['More Information'] = 'More Information';
+$lang['sub-album'] = 'sub-album';
 ?>
