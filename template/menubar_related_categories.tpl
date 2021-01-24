@@ -17,7 +17,7 @@
   {/if}
         <h2>{'&nbsp;'|@str_repeat:($cat.LEVEL-1)}
   {if isset($cat.url)}
-      <a href="{$cat.url}" title="{$cat.TITLE}">{$cat.name}</a>
+      <a href="{$cat.url}" title="{$cat.TITLE}" class="collapsible-header-link">{$cat.name}</a>
   {else}
       {$cat.name}
   {/if}
