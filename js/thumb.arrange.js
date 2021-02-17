@@ -168,3 +168,9 @@ SPThumbs.prototype = {
 
 }
 
+$(document).on('pagecreate', function( event ) {
+    $('.collapsible-header-link').bind('click', function (e) {
+        e.stopPropagation();
+    });
+});
+
