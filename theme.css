@@ -28,7 +28,8 @@
 	position: absolute;
 }
 
-#more_link {
+#more_link,
+#fullscreen_link {
   color: #FFFFFF;
   display: table-cell;
   font-size: 1.1em;
