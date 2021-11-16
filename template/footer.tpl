@@ -12,7 +12,7 @@
 	<a href="mailto:{$CONTACT_MAIL}?subject={'A comment on your site'|@translate|@escape:url}">{'Webmaster'|@translate}</a>
 	{/if}
   <br>{'View in'|@translate} :
-    <b>{'Mobile'|@translate}</b> | <a href="{$TOGGLE_MOBILE_THEME_URL}">{'Desktop'|@translate}</a>
+<b>{'Mobile'|@translate}</b> | {if isset($TOGGLE_MOBILE_THEME_URL)} <a href="{$TOGGLE_MOBILE_THEME_URL}">{'Desktop'|@translate}</a> {/if}
   </h6>
 </div>
 {/if}

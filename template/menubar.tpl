@@ -18,5 +18,7 @@
 <br>
 <ul data-role="listview">
   <li data-role="list-divider">{'View in'|@translate}</li>
+{if isset($TOGGLE_MOBILE_THEME_URL)}
   <li><a href="{$TOGGLE_MOBILE_THEME_URL}">{'Desktop'|@translate}</a></li>
+{/if}
 </ul>
