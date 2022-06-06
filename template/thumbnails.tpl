@@ -9,7 +9,7 @@
 {combine_script id='smartpocket' path='themes/smartpocket/js/smartpocket.js' require='photoswipe'}
 {combine_script id='sp.thumb.arrange' path='themes/smartpocket/js/thumb.arrange.js' require='jquery' load='footer'}
 {footer_script}
-var var_loop = {if $smartpocket.loop}true{else}false{/if}, var_autohide = {$smartpocket.autohide}, var_trad = "{'More Information'|@translate}";
+var var_loop = {if $smartpocket.loop}true{else}false{/if}, var_autohide = {$smartpocket.autohide}, var_trad = "{'More Information'|@translate}", var_trad_fs = "{'Full Screen'|@translate}";
 var SPThumbsOpts ={ hMargin:{$hmargin},rowHeight:{$row_height}};
 {/footer_script}
 {$thumb_picker->init($row_height)}

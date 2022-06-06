@@ -28,7 +28,8 @@
 	position: absolute;
 }
 
-#more_link {
+#more_link,
+#fullscreen_link {
   color: #FFFFFF;
   display: table-cell;
   font-size: 1.1em;
@@ -68,4 +69,17 @@
   top: 0;
   z-index:-1;
   opacity:0 !important
+}
+
+#mbr_albums ul {
+    margin: 0;
+    padding: 0;
+}
+#mbr_albums ul span.badge {
+    margin: 0 1ex;
+    float: right;
+}
+#mbr_albums ul span.badge.badgeCategories {
+    color: darkblue; 
+    font-style: italic; 
 }
