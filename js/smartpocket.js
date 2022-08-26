@@ -34,7 +34,7 @@ return '<div class="ps-toolbar-close"><div class="ps-toolbar-content"></div></di
 
       jQuery.ajax({
         type: "POST",
-        url: 'ws.php?format=json&method=smartpocket.images.logHistory',
+        url: 'ws.php?format=json&method=pwg.history.log',
         data: {
           image_id:currentImage.metaData.image_id,
           cat_id:jQuery("ul.thumbnails").data("cat_id"),
