@@ -6,7 +6,7 @@
 
 {combine_script id='klass' path='themes/smartpocket/js/klass.min.js'}
 {combine_script id='photoswipe' path='themes/smartpocket/js/code.photoswipe.jquery.min.js' require='klass,jquery.mobile'}
-{combine_script id='smartpocket' path='themes/smartpocket/js/smartpocket.js' require='photoswipe'}
+{combine_script id='smartpocket' path='themes/smartpocket/js/smartpocket.js' require='photoswipe' load='footer'}
 {combine_script id='sp.thumb.arrange' path='themes/smartpocket/js/thumb.arrange.js' require='jquery' load='footer'}
 {footer_script}
 var var_loop = {if $smartpocket.loop}true{else}false{/if}, var_autohide = {$smartpocket.autohide}, var_trad = "{'More Information'|@translate}";
@@ -26,7 +26,7 @@ var SPThumbsOpts ={ hMargin:{$hmargin},rowHeight:{$row_height}};
 >
 {/strip}
 {foreach from=$thumbnails item=thumbnail}{strip}
-{$derivative=$thumb_picker->pick($thumbnail.src_image)}
+{$derivative=$thumb_picker->pick($thumbnail.src_image, $row_height)}
 {if isset($page_selection[$thumbnail.id])}
 	<li class="liVisible">
 {if !isset($thumbnail.representative_ext)}

@@ -51,14 +51,14 @@ class SPThumbPicker
     $this->height = $height;
   }
   
-  function pick($src_image)
+  function pick($src_image, $height)
   {
     $ok = false;
     foreach($this->candidates as $candidate)
     {
       $deriv = new DerivativeImage($candidate, $src_image);
       $size = $deriv->get_size();
-      if ($size[1]>=$row_height-2)
+      if ($size[1]>=$height-2)
       {
         $ok = true;
         break;
