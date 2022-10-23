@@ -17,7 +17,7 @@
 </div>
 {/if}
 {footer_script require='jquery'}
-document.cookie = 'screen_size='+jQuery(document).width()+'x'+jQuery(document).height()+';path={isset($COOKIE_PATH) ? $COOKIE_PATH : ''}';
+document.cookie = 'screen_size='+jQuery(document).width()+'x'+jQuery(document).height()+';path={$COOKIE_PATH|default:''}';
 {/footer_script}
 {get_combined_scripts load='footer'}
 {if isset($footer_elements)}
