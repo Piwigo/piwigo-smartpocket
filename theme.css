@@ -69,3 +69,32 @@
   z-index:-1;
   opacity:0 !important
 }
+
+@media (max-width: 600px) {
+  .filter-manager-close, 
+  .tags-found-close, 
+  .albums-found-close {
+    position: unset;
+    align-self: end;
+  }
+  .filter-manager-popin-container, 
+  .tags-found-popin-container, 
+  .albums-found-popin-container {
+    width: 100%;
+  }
+  .filter-word-form {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  .mcs-tags-found,
+  .mcs-albums-found {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .pwg_footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
