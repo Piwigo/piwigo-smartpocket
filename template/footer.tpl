@@ -1,4 +1,6 @@
-{if !empty($thumb_navbar)}
+{if !empty($cats_navbar)}
+{include file='navigation_bar.tpl'|@get_extent:'navbar' navbar=$cats_navbar}
+{elseif !empty($thumb_navbar)}
 {include file='navigation_bar.tpl'|@get_extent:'navbar' navbar=$thumb_navbar}
 {elseif !empty($navbar) and !isset($ELEMENT_CONTENT)}
 {include file='navigation_bar.tpl'|@get_extent:'navbar'}
