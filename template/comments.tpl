@@ -2,7 +2,7 @@
 <div data-role="content">
 
 {if isset($comments)}
-	{include file='comment_list.tpl' comment_derivative_params=$derivative_params}
+	{include file='comment_list.tpl' comment_derivative_params=$comment_derivative_params}
 {/if}
 
 </div> <!-- content -->
