@@ -11,7 +11,21 @@
   <input type="text" id="username_or_email" name="username_or_email" size="40" maxlength="40"{if isset($username_or_email)} value="{$username_or_email}"{/if}>
   <input type="submit" name="submit" value="{'Change my password'|@translate}">
   </div>
-
+  {elseif $action eq 'lost_code'}
+  <div>
+    <div class="message">{"An email has been sent with a verification code"|translate}</div>
+    <div class="message" style="font-size: 12px; margin-bottom: 20px;">{"If you do not receive the email, please contact your webmaster."|translate}</div>
+    <label>
+      {'Verification code'|@translate}
+      <br>
+      <input type="text" id="user_code" name="user_code" size="100" />
+    </label>
+  
+  <p class="bottomButtons"><input type="submit" name="submit" value="{'Verify'|@translate}"></p>
+  {if isset($errors['password_form_error'])}
+    <p class="error-message" style="color: red;"><i class="gallery-icon-attention-circled"></i> {$errors['password_form_error']}</p>
+  {/if}
+  </div>
   {elseif $action eq 'reset'}
   <div data-role="fieldcontain">
   <label for="password">{'New password'|@translate}</label>
