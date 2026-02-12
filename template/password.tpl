@@ -13,7 +13,7 @@
   </div>
   {elseif $action eq 'lost_code'}
   <div>
-    <div class="message">{"An email has been sent with a verification code"|translate}</div>
+    <div class="message">{"If your account exists, a verification code has been sent to your email address."|translate}</div>
     <div class="message" style="font-size: 12px; margin-bottom: 20px;">{"If you do not receive the email, please contact your webmaster."|translate}</div>
     <label>
       {'Verification code'|@translate}
